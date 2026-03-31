@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MMT Alliance — Global Procurement, Supply & Logistics Partner serving the United Nations, governments, NGOs, and international organisations." />
+  <meta name="theme-color" content="#0a1f44" />
+  <title>MMT Alliance | Global Procurement, Supply & Logistics</title>
+
+  <!-- Aptos via fallback stack (web-safe equivalent with Google Fonts supplement) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<!-- NAVIGATION -->
+<header id="site-header" role="banner">
+  <nav class="nav-container" aria-label="Main navigation">
+    
+    <!-- Logo -->
+    <a href="/" class="nav-logo" aria-label="MMT Alliance Home">
+      <img src="assets/logo.png" alt="MMT Alliance" class="logo-img" 
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="logo-fallback" style="display:none" aria-hidden="true">
+        <span class="logo-text-main">MMT</span><span class="logo-text-sub"> ALLIANCE</span>
+      </span>
+    </a>
+
+    <!-- Mobile Toggle Button (dot-grid → X, injected by nav.js) -->
+    <button id="nav-toggle" class="nav-toggle" 
+            aria-label="Toggle navigation"
+            aria-expanded="false" 
+            aria-controls="nav-menu">
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="/" class="nav-link" data-page="home">Home</a></li>
+      <li><a href="/about" class="nav-link" data-page="about">About</a></li>
+      
+      <!-- Dropdown Item with Sub-Menus -->
+      <li class="nav-dropdown" data-dropdown>
+        <a href="/services" class="nav-link dropdown-trigger" 
+           data-page="services" aria-haspopup="true" aria-expanded="false">
+          <span>Services</span>
+          <svg class="chevron-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu" role="list" aria-label="Services submenu">
+          
+          <!-- Item with Sub-Menu -->
+          <li class="dropdown-item has-submenu">
+            <a href="/services#procurement" class="dropdown-link submenu-trigger">
+              <span>Procurement &amp; Sourcing</span>
+              <svg class="submenu-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <!-- Sub-Menu (Level 2) -->
+            <ul class="submenu" role="list" aria-label="Procurement sub-options">
+              <li><a href="/services#procurement#strategic" class="submenu-link">Strategic Sourcing</a></li>
+              <li><a href="/services#procurement#vendor" class="submenu-link">Vendor Management</a></li>
+              <li><a href="/services#procurement#contracts" class="submenu-link">Contract Negotiation</a></li>
+            </ul>
+          </li>
+          
+          <!-- Item with Sub-Menu -->
+          <li class="dropdown-item has-submenu">
+            <a href="/services#supply" class="dropdown-link submenu-trigger">
+              <span>Supply Solutions</span>
+              <svg class="submenu-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <ul class="submenu" role="list" aria-label="Supply sub-options">
+              <li><a href="/services#supply#inventory" class="submenu-link">Inventory Management</a></li>
+              <li><a href="/services#supply#warehousing" class="submenu-link">Warehousing</a></li>
+            </ul>
+          </li>
+          
+          <!-- Regular Item (no sub-menu) -->
+          <li class="dropdown-item">
+            <a href="/services#logistics" class="dropdown-link">Logistics &amp; Delivery</a>
+          </li>
+          
+          <!-- Regular Item (no sub-menu) -->
+          <li class="dropdown-item">
+            <a href="/services#emergency" class="dropdown-link">Emergency Response</a>
+          </li>
+          
+        </ul>
+      </li>
+      
+      <li><a href="/sectors" class="nav-link" data-page="sectors">Sectors</a></li>
+      <li><a href="/capabilities" class="nav-link" data-page="capabilities">Capabilities</a></li>
+      <li><a href="/case-studies" class="nav-link" data-page="case-studies">Case Studies</a></li>
+      <li><a href="/compliance" class="nav-link" data-page="compliance">Compliance</a></li>
+      <li><a href="/news" class="nav-link" data-page="news">News &amp; Media</a></li>
+      <li><a href="/contact" class="nav-link nav-cta" data-page="contact">Contact</a></li>
+    </ul>
+    
+    <!-- Mobile overlay backdrop -->
+    <div class="nav-backdrop" aria-hidden="true"></div>
+  </nav>
+</header>
+  <!-- PAGE CONTENT -->
+  <main id="page-content" role="main" aria-live="polite"></main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="MMT Alliance" class="footer-logo" onerror="this.style.display='none';document.getElementById('footer-logo-fallback').style.display='flex'" />
+      <div id="footer-logo-fallback" class="footer-logo-text" style="display:none">
+        <span style="font-size:1.5rem;font-weight:700;color:#fff;letter-spacing:-0.02em;font-family:var(--font-heading)">MMT</span>
+        <span style="font-size:1rem;font-weight:600;color:rgba(255,255,255,0.7);letter-spacing:0.06em;font-family:var(--font-heading)"> ALLIANCE</span>
+      </div>
+        <p class="footer-tagline">Global Procurement, Supply & Logistics Partner</p>
+        <p class="footer-desc">Delivering mission-critical supply chain solutions for governments, international organisations, and humanitarian operations worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <ul role="list">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/capabilities">Capabilities</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/news">News &amp; Media</a></li>
+            <li><a href="/become-a-supplier">Become a Supplier</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+          <ul role="list">
+            <li><a href="/services#procurement">Procurement & Sourcing</a></li>
+            <li><a href="/services#supply">Supply Solutions</a></li>
+            <li><a href="/services#logistics">Logistics & Delivery</a></li>
+            <li><a href="/services#emergency">Emergency Response</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Sectors</h3>
+          <ul role="list">
+            <li><a href="/sectors#governments">Governments</a></li>
+            <li><a href="/sectors#un">United Nations</a></li>
+            <li><a href="/sectors#ngos">NGOs</a></li>
+            <li><a href="/sectors#humanitarian">Humanitarian Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Contact</h3>
+          <address>
+            <p>Level 7/80 Dorcas St<br />Southbank VIC 3006<br />Australia</p>
+            <a href="mailto:info@mmtalliance.com" class="footer-email">info@mmtalliance.com</a>
+            <a href="mailto:procurement@mmtalliance.com" class="footer-email">procurement@mmtalliance.com</a>
+            <a href="mailto:contracts@mmtalliance.com" class="footer-email">contracts@mmtalliance.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <!-- Policies footer strip -->
+    <div class="footer-policies-strip">
+      <div style="max-width:var(--content-width);margin:0 auto;padding:var(--space-md) var(--space-lg);display:flex;flex-wrap:wrap;gap:var(--space-md);align-items:center">
+        <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3)">Policies</span>
+        <a href="/policies" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Corporate Policies</a>
+        <a href="/supplier-code-of-conduct" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Supplier Code of Conduct</a>
+        <a href="/terms" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms &amp; Conditions</a>
+        <a href="/policies#anti-corruption" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Anti-Corruption Policy</a>
+        <a href="/policies#esg" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">ESG Policy</a>
+        <a href="/policies#modern-slavery" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Modern Slavery Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> MMT Alliance. All rights reserved.</p>
+      <a href="/capability-statement" class="footer-cap-btn">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10M6 9l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="3" y="15" width="14" height="2" rx="1" fill="currentColor"/></svg>
+        Download Capability Statement
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/router.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/about.js"></script>
+  <script src="js/pages/services.js"></script>
+  <script src="js/pages/sectors.js"></script>
+  <script src="js/pages/capabilities.js"></script>
+  <script src="js/pages/case-studies.js"></script>
+  <script src="js/pages/compliance.js"></script>
+  <script src="js/pages/contact.js"></script>
+  <script src="js/pages/capability-statement.js"></script>
+  <script src="js/pages/news.js"></script>
+  <script src="js/pages/policies.js"></script>
+  <script src="js/pages/supplier-code.js"></script>
+  <script src="js/pages/terms.js"></script>
+  <script src="js/pages/become-supplier.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

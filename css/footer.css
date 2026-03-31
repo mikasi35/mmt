@@ -1,0 +1,148 @@
+/* ============================================================
+   FOOTER.CSS
+   ============================================================ */
+
+#site-footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.8);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: var(--space-2xl);
+}
+
+.footer-brand {}
+.footer-logo {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--space-md);
+  filter: brightness(0) invert(1);
+}
+.footer-tagline {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+  max-width: none;
+}
+.footer-desc {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  max-width: 36ch;
+  line-height: 1.65;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.footer-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: var(--space-md);
+}
+
+.footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; list-style: none; }
+.footer-col ul a {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color var(--duration);
+}
+.footer-col ul a:hover { color: var(--white); }
+
+.footer-col address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer-col address p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.55;
+  max-width: none;
+  margin-bottom: 0.4rem;
+}
+.footer-email {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  display: block;
+  transition: color var(--duration);
+}
+.footer-email:hover { color: var(--accent); }
+
+/* Bottom bar */
+.footer-bottom {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  max-width: none;
+}
+
+.footer-cap-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  background: rgba(200,168,75,0.15);
+  border: 1px solid rgba(200,168,75,0.35);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: background var(--duration), border-color var(--duration);
+}
+.footer-cap-btn:hover {
+  background: rgba(200,168,75,0.25);
+  border-color: var(--accent);
+}
+.footer-cap-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--accent);
+}
+
+/* Logo fallback text in footer */
+.footer-logo-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Policies strip */
+.footer-policies-strip {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+@media (max-width: 768px) {
+  .footer-policies-strip > div { gap: 0.6rem; }
+}

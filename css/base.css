@@ -1,0 +1,294 @@
+/* ============================================================
+   BASE.CSS — CSS Variables, Reset, Typography
+   MMT Alliance
+   ============================================================ */
+
+:root {
+  --navy:          #0a1f44;
+  --navy-mid:      #122954;
+  --navy-light:    #1a3a6e;
+  --slate:         #4a6080;
+  --slate-light:   #8fa3bd;
+  --accent:        #c8a84b;
+  --accent-light:  #e8c96a;
+
+  /* Neutrals */
+  --white:         #ffffff;
+  --off-white:     #f8f9fb;
+  --surface:       #f0f3f8;
+  --border:        #dde4ed;
+  --border-dark:   #b8c7da;
+  --text-primary:  #0a1f44;
+  --text-body:     #2d3e55;
+  --text-muted:    #5a7090;
+  --text-light:    #8fa3bd;
+
+  /* Spacing */
+  --space-xs:  0.375rem;
+  --space-sm:  0.75rem;
+  --space-md:  1.25rem;
+  --space-lg:  2rem;
+  --space-xl:  3.5rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --max-width:       1280px;
+  --content-width:   1100px;
+  --nav-height:      76px;
+  --section-pad:     5rem;
+
+  /* Typography */
+  --font-heading: 'Aptos', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Aptos', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Radii */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:   0 2px 8px rgba(10,31,68,0.08);
+  --shadow-md:   0 6px 24px rgba(10,31,68,0.12);
+  --shadow-lg:   0 16px 48px rgba(10,31,68,0.16);
+  --shadow-xl:   0 32px 80px rgba(10,31,68,0.20);
+
+  /* Transitions */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration:    300ms;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul { list-style: none; }
+
+address { font-style: normal; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ---- Typography Scale ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
+h4 { font-size: 1.15rem; }
+
+p {
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  max-width: 68ch;
+}
+
+strong { font-weight: 600; }
+
+/* ---- Layout Utilities ---- */
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--section-pad) 0;
+}
+
+.section--alt {
+  background: var(--off-white);
+}
+
+.section--navy {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.section--navy h1,
+.section--navy h2,
+.section--navy h3,
+.section--navy h4 { color: var(--white); }
+.section--navy p { color: rgba(255,255,255,0.82); }
+
+/* ---- Focus Styles ---- */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---- Divider ---- */
+.divider {
+  width: 56px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+/* ---- Section Label ---- */
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #122954;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: background var(--duration) var(--ease-out),
+              color var(--duration) var(--ease-out),
+              transform var(--duration) var(--ease-out),
+              box-shadow var(--duration) var(--ease-out);
+  cursor: pointer;
+  border: 2px solid transparent;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--navy);
+  border-color: var(--accent);
+}
+.btn-primary:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255,255,255,0.6);
+}
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--white);
+}
+
+.btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ---- Tag / Pill ---- */
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--surface);
+  color: var(--navy);
+  border: 1px solid var(--border);
+}
+
+/* ---- Page Transitions ---- */
+#page-content {
+  flex: 1;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+#page-content.fading {
+  opacity: 0;
+}
+
+/* ---- Scroll Reveal — ALWAYS VISIBLE, animate in on scroll ---- */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* Only animate if JS explicitly enabled it AND user has no motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  body.js-ready .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+  }
+  body.js-ready .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
