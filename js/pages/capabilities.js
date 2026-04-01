@@ -83,265 +83,319 @@ const CapabilitiesPage = {
           <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
       </div>
-<!-- ===== KEY DIFFERENTIATORS ===== -->
-<section class="section mmt-differentiators" aria-labelledby="differentiators-heading">
+<section class="section-mmt-lattice" id="differentiators" aria-labelledby="differentiators-heading">
+  <div class="matrix-grid"></div>
+  
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Key Differentiators</span>
-      <h2 id="differentiators-heading">What Sets MMT Alliance Apart</h2>
+    <div class="section-header section-header--center reveal">
+      <span class="section-label">Architectural Advantage</span>
+      <h2 id="differentiators-heading">The MMT <span class="teal-text">Lattice</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-intro">
+        Six integrated pillars defining our operational superiority.
+      </p>
     </div>
-    
-    <div class="mmt-differentiators-grid">
-      <div class="mmt-diff-card reveal reveal-delay-1">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">01</div>
-        <h3>End-to-End Supply Chain Management</h3>
-        <p>From requirements analysis through to last-mile delivery, we manage every stage of the supply chain under one accountable partner.</p>
-      </div>
-      
-      <div class="mmt-diff-card reveal reveal-delay-2">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">02</div>
-        <h3>Proven Governance &amp; Compliance</h3>
-        <p>Structured procurement processes, full audit trails, and compliance with international procurement standards—built in, not bolted on.</p>
-      </div>
-      
-      <div class="mmt-diff-card reveal reveal-delay-3">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.5"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">03</div>
-        <h3>Backed by Established Group</h3>
-        <p>MMT Care's track record in multi-million-dollar government programmes gives MMT Alliance the institutional credibility buyers require.</p>
-      </div>
-      
-      <div class="mmt-diff-card reveal reveal-delay-4">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 3a9 9 0 0 1 0 18M3 12h18" stroke="currentColor" stroke-width="1.5"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">04</div>
-        <h3>Global Sourcing Capability</h3>
-        <p>International supplier networks across more than 50 countries, enabling competitive sourcing for any product category.</p>
-      </div>
-      
-      <div class="mmt-diff-card reveal reveal-delay-5">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">05</div>
-        <h3>Complex Environment Operations</h3>
-        <p>Conflict-affected regions, remote access areas, and fragile states—we have the networks and experience to deliver where it is hardest.</p>
-      </div>
-      
-      <div class="mmt-diff-card reveal reveal-delay-6">
-        <div class="mmt-diff-card-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="mmt-diff-card-number">06</div>
-        <h3>Emergency Response Readiness</h3>
-        <p>24/7 activation capability for crisis procurement and logistics, with pre-qualified suppliers and established freight routes.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== CORE POSITIONING ===== -->
-<section class="section mmt-positioning section--alt" aria-labelledby="positioning-heading">
-  <div class="container">
-    <div class="mmt-positioning-hero reveal">
-      <div class="mmt-positioning-content">
-        <span class="section-label">Core Position</span>
-        <h2 id="positioning-heading">Our Commitment</h2>
-        <div class="mmt-divider"></div>
-        <div class="mmt-positioning-quote">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-          <p>"We manage the entire supply chain process from sourcing to last-mile delivery—matching the position of the world's leading procurement and logistics organisations."</p>
-          <span class="quote-source">MMT Alliance — Core Positioning Statement</span>
+    <div class="lattice-container">
+      <svg class="lattice-svg" viewBox="0 0 1200 600" fill="none" preserveAspectRatio="none">
+        <path d="M0,100 C200,100 400,500 600,300 S1000,100 1200,500" stroke="#e2e8f0" stroke-width="1" />
+        <path class="path-active" d="M0,100 C200,100 400,500 600,300 S1000,100 1200,500" stroke="#14b8a6" stroke-width="2" />
+      </svg>
+
+      <div class="lattice-nodes">
+        <div class="lattice-node reveal n-top">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">01</span>
+            <h3>End-to-End Supply Chain</h3>
+            <p>Requirements analysis through to last-mile delivery under one accountable partner.</p>
+          </div>
         </div>
-      </div>
-      <div class="mmt-positioning-visual">
-        <div class="mmt-visual-card">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=550&fit=crop" alt="Corporate capabilities and institutional strength" loading="lazy" width="800" height="1000">
-          <div class="mmt-visual-overlay-stats">
-            <div class="mmt-overlay-stat">
-              <span class="stat-value">50+</span>
-              <span class="stat-label">Countries</span>
-            </div>
-            <div class="mmt-overlay-stat">
-              <span class="stat-value">24/7</span>
-              <span class="stat-label">Support</span>
-            </div>
+
+        <div class="lattice-node reveal n-bottom">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">02</span>
+            <h3>Proven Governance</h3>
+            <p>Full audit trails and international procurement standards built into every operation.</p>
+          </div>
+        </div>
+
+        <div class="lattice-node reveal n-top">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">03</span>
+            <h3>Institutional Credibility</h3>
+            <p>Backed by MMT Care’s track record in multi-million-dollar government programmes.</p>
+          </div>
+        </div>
+
+        <div class="lattice-node reveal n-bottom">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">04</span>
+            <h3>Global Sourcing</h3>
+            <p>Networks across 50+ countries enabling competitive sourcing for any category.</p>
+          </div>
+        </div>
+
+        <div class="lattice-node reveal n-top">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">05</span>
+            <h3>Complex Operations</h3>
+            <p>Proven experience delivering in conflict-affected regions and fragile states.</p>
+          </div>
+        </div>
+
+        <div class="lattice-node reveal n-bottom">
+          <div class="node-point"></div>
+          <div class="node-content">
+            <span class="node-num">06</span>
+            <h3>Emergency Readiness</h3>
+            <p>24/7 activation for crisis logistics with pre-qualified freight routes.</p>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="mmt-capabilities-grid">
-      <div class="mmt-cap-feature-card reveal reveal-delay-1">
-        <div class="mmt-cap-feature-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2" stroke="currentColor" stroke-width="1.5"/></svg>
-        </div>
-        <h3>Procurement Expertise</h3>
-        <p>Deep experience in structured procurement across medical, food, shelter, logistics, and technical goods categories.</p>
-        <ul class="feature-list">
-          <li>Tender management</li>
-          <li>Vendor evaluation</li>
-          <li>Contract negotiation</li>
-        </ul>
-      </div>
+  </div>
+</section>
+<section class="section-mmt-dashboard" id="positioning" aria-labelledby="positioning-heading">
+  <div class="matrix-grid"></div>
+  
+  <div class="container">
+    <div class="dashboard-wrapper reveal">
       
-      <div class="mmt-cap-feature-card reveal reveal-delay-2">
-        <div class="mmt-cap-feature-icon">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="1" y="3" width="15" height="13" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M16 8h4l3 4v4h-7V8z" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div class="dashboard-core">
+        <div class="core-header">
+          <span class="status-dot"></span>
+          <span class="core-label">SYSTEM_POSITION: STABLE</span>
         </div>
-        <h3>Supply Chain Control</h3>
-        <p>End-to-end visibility and control from supplier contract through to delivery confirmation and reporting.</p>
-        <ul class="feature-list">
-          <li>Real-time tracking</li>
-          <li>Quality assurance</li>
-          <li>Delivery verification</li>
-        </ul>
+        
+        <div class="core-content">
+          <span class="section-label">Core Commitment</span>
+          <h2 id="positioning-heading">Strategic <span class="teal-text">Alignment</span></h2>
+          
+          <div class="quote-block">
+            <p class="quote-block-text">"We manage the entire supply chain process from sourcing to last-mile delivery—matching the position of the world's leading procurement and logistics organisations."</p>
+            <div class="quote-footer">
+              <span class="source-tag">MMT_ALLIANCE // AUTH_01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-module">
+            <span class="stat-val">50+</span>
+            <span class="stat-unit">GLOBAL_NODES</span>
+          </div>
+          <div class="stat-module">
+            <span class="stat-val">24/7</span>
+            <span class="stat-unit">OPS_SUPPORT</span>
+          </div>
+        </div>
       </div>
-      
-      <div class="mmt-cap-feature-card reveal reveal-delay-3">
-        <div class="mmt-cap-feature-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/></svg>
+
+      <div class="module-feed">
+        
+        <div class="data-module reveal reveal-delay-1">
+          <div class="module-line"></div>
+          <div class="module-body">
+            <div class="module-header">
+              <span class="module-id">MOD_01</span>
+              <h3>Procurement Expertise</h3>
+            </div>
+            <p>Deep experience in structured procurement across medical, food, and technical goods.</p>
+            <div class="module-tags">
+              <span>TENDER_MGMT</span>
+              <span>VENDOR_EVAL</span>
+              <span>NEGOTIATION</span>
+            </div>
+          </div>
         </div>
-        <h3>Governance Frameworks</h3>
-        <p>Transparent processes, documented decision trails, and compliance structures aligned to international standards.</p>
-        <ul class="feature-list">
-          <li>Audit-ready documentation</li>
-          <li>Ethical sourcing</li>
-          <li>Compliance verification</li>
-        </ul>
-      </div>
-      
-      <div class="mmt-cap-feature-card reveal reveal-delay-4">
-        <div class="mmt-cap-feature-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+
+        <div class="data-module reveal reveal-delay-2">
+          <div class="module-line"></div>
+          <div class="module-body">
+            <div class="module-header">
+              <span class="module-id">MOD_02</span>
+              <h3>Supply Chain Control</h3>
+            </div>
+            <p>End-to-end visibility and control from supplier contract to delivery confirmation.</p>
+            <div class="module-tags">
+              <span>RT_TRACKING</span>
+              <span>QA_LOGISTICS</span>
+              <span>DELIVERY_VER</span>
+            </div>
+          </div>
         </div>
-        <h3>Institutional Strength</h3>
-        <p>Group backing that provides the financial credibility, scale, and government trust required by institutional buyers.</p>
-        <ul class="feature-list">
-          <li>Financial accountability</li>
-          <li>Multi-state operations</li>
-          <li>Government trust</li>
-        </ul>
+
+        <div class="data-module reveal reveal-delay-3">
+          <div class="module-line"></div>
+          <div class="module-body">
+            <div class="module-header">
+              <span class="module-id">MOD_03</span>
+              <h3>Governance Frameworks</h3>
+            </div>
+            <p>Transparent processes and compliance structures aligned to international standards.</p>
+            <div class="module-tags">
+              <span>AUDIT_READY</span>
+              <span>ETHICAL_SRC</span>
+              <span>COMPLIANCE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-module reveal reveal-delay-4">
+          <div class="module-line"></div>
+          <div class="module-body">
+            <div class="module-header">
+              <span class="module-id">MOD_04</span>
+              <h3>Institutional Strength</h3>
+            </div>
+            <p>Group backing providing the financial credibility and scale required by global buyers.</p>
+            <div class="module-tags">
+              <span>FIN_ACCOUNT</span>
+              <span>MULTI_STATE</span>
+              <span>GOV_TRUST</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CAPABILITY METRICS ===== -->
-<section class="section mmt-metrics" aria-labelledby="metrics-heading">
+<section class="section-mmt-intel" id="metrics" aria-labelledby="metrics-heading">
+  <div class="matrix-grid"></div>
+  
   <div class="container">
     <div class="section-header section-header--center reveal">
-      <span class="section-label">By The Numbers</span>
-      <h2 id="metrics-heading">Our Capabilities at Scale</h2>
-      <div class="mmt-divider"></div>
+      <span class="section-label">Institutional Capacity</span>
+      <h2 id="metrics-heading">Operational <span class="teal-text">Briefing</span></h2>
+      <div class="divider mx-auto"></div>
     </div>
-    
-    <div class="mmt-metrics-grid">
-      <div class="mmt-metric-card reveal reveal-delay-1">
-        <div class="mmt-metric-value">50+</div>
-        <div class="mmt-metric-label">Countries Served</div>
-        <div class="mmt-metric-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 3a9 9 0 0 1 0 18M3 12h18" stroke="currentColor" stroke-width="1.5"/></svg>
-        </div>
-      </div>
+
+    <div class="intel-brief-stack">
       
-      <div class="mmt-metric-card reveal reveal-delay-2">
-        <div class="mmt-metric-value">4</div>
-        <div class="mmt-metric-label">Core Service Verticals</div>
-        <div class="mmt-metric-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="intel-item reveal">
+        <div class="intel-visual data-right">
+          <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=400&fit=crop" alt="UN Partnership" loading="lazy">
+          <span class="visual-tag">[ LOG_50_GLOBAL ]</span>
+        </div>
+        <div class="intel-data text-left">
+          <div class="data-header">
+            <span class="data-num">50<span class="teal-text">+</span></span>
+            <h3>Countries Served</h3>
+          </div>
+          <p>End-to-end supply chain integration activated across 50+ diverse global environments.</p>
+          <div class="status-bar"><span class="status-active">STATUS: ACTIVE // COORD_ALPHA</span></div>
         </div>
       </div>
-      
-      <div class="mmt-metric-card reveal reveal-delay-3">
-        <div class="mmt-metric-value">24/7</div>
-        <div class="mmt-metric-label">Emergency Response</div>
-        <div class="mmt-metric-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+
+      <div class="intel-item reveal">
+        <div class="intel-data text-right">
+          <div class="data-header">
+            <span class="data-num">24/7</span>
+            <h3>Emergency Response</h3>
+          </div>
+          <p>Crisis-ready logistics activated rapidly to deliver essential goods in disaster-affected regions.</p>
+          <div class="status-bar"><span class="status-urgent">STATUS: URGENT // DEPLOY_ACTIVE</span></div>
+        </div>
+        <div class="intel-visual data-left">
+          <img src="https://hsiassetstorage.sfo2.digitaloceanspaces.com/transforms/blogimages/26619/emergency-response-what-to-do-when-disaster-strikes-vivid-learning-systems_d4bd353bac6a5f3a10ab94d9650d3531.jpg" alt="Emergency response" loading="lazy">
+          <span class="visual-tag">[ LOG_REQ_247 ]</span>
         </div>
       </div>
-      
-      <div class="mmt-metric-card reveal reveal-delay-4">
-        <div class="mmt-metric-value">100%</div>
-        <div class="mmt-metric-label">Compliance Rate</div>
-        <div class="mmt-metric-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"/></svg>
+
+      <div class="intel-item reveal">
+        <div class="intel-visual data-right">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Compliance meeting" loading="lazy">
+          <span class="visual-tag">[ LOG_AUDIT_100 ]</span>
+        </div>
+        <div class="intel-data text-left">
+          <div class="data-header">
+            <span class="data-num">100<span class="teal-text">%</span></span>
+            <h3>Compliance Rate</h3>
+          </div>
+          <p>Structured procurement processes, full audit trails, and international standards adherence.</p>
+          <div class="status-bar"><span class="status-active">STATUS: ACTIVE // ISO_ALIGN</span></div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
 <!-- ===== FAQ SECTION (SEO) ===== -->
-<section class="section mmt-faq" aria-labelledby="faq-heading">
+<section class="section-mmt-faq" id="faq" aria-labelledby="faq-heading">
+  <div class="matrix-grid"></div>
+  
   <div class="container">
     <div class="section-header section-header--center reveal">
-      <span class="section-label">FAQ</span>
-      <h2 id="faq-heading">Capability Questions</h2>
-      <div class="mmt-divider"></div>
+      <span class="section-label">Knowledge Base</span>
+      <h2 id="faq-heading">Capability <span class="teal-text">Protocol</span></h2>
+      <div class="divider mx-auto"></div>
     </div>
-    
-    <div class="mmt-faq-grid">
-      <details class="mmt-faq-item reveal reveal-delay-1">
-        <summary>
-          <span class="faq-question">What makes MMT Alliance different from other procurement companies?</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-        </summary>
-        <div class="faq-answer">
+
+    <div class="faq-terminal reveal">
+      <div class="faq-index">
+        <div class="index-header">QUESTION_INDEX // 04_ENTRIES</div>
+        
+        <button class="faq-nav active" data-target="q1">
+          <span class="nav-id">01</span>
+          <span class="nav-text">Unique Value Proposition</span>
+        </button>
+
+        <button class="faq-nav" data-target="q2">
+          <span class="nav-id">02</span>
+          <span class="nav-text">Compliance & Governance</span>
+        </button>
+
+        <button class="faq-nav" data-target="q3">
+          <span class="nav-id">03</span>
+          <span class="nav-text">Emergency Response Ops</span>
+        </button>
+
+        <button class="faq-nav" data-target="q4">
+          <span class="nav-id">04</span>
+          <span class="nav-text">Conflict-Affected Logistics</span>
+        </button>
+      </div>
+
+      <div class="faq-viewport">
+        <div class="viewport-header">RESPONSE_STREAM</div>
+        
+        <div class="faq-response active" id="q1">
+          <span class="resp-label">Question:</span>
+          <h3>What makes MMT Alliance different from other procurement companies?</h3>
           <p>We combine institutional credibility (backed by MMT Care's government contract delivery) with global sourcing reach across 50+ countries, plus the agility to operate in complex and fragile environments.</p>
         </div>
-      </details>
-      
-      <details class="mmt-faq-item reveal reveal-delay-2">
-        <summary>
-          <span class="faq-question">What compliance standards do you follow?</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-        </summary>
-        <div class="faq-answer">
+
+        <div class="faq-response" id="q2">
+          <span class="resp-label">Question:</span>
+          <h3>What compliance standards do you follow?</h3>
           <p>We follow UN procurement guidelines, ISO standards, and maintain full audit-ready documentation for all transactions. Our processes are built to meet government and institutional buyer requirements.</p>
         </div>
-      </details>
-      
-      <details class="mmt-faq-item reveal reveal-delay-3">
-        <summary>
-          <span class="faq-question">Can you handle emergency procurement requirements?</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-        </summary>
-        <div class="faq-answer">
+
+        <div class="faq-response" id="q3">
+          <span class="resp-label">Question:</span>
+          <h3>Can you handle emergency procurement requirements?</h3>
           <p>Yes. Our emergency response team operates 24/7 and can activate supply operations within hours of a crisis declaration, with typical deployment of critical supplies within 72 hours.</p>
         </div>
-      </details>
-      
-      <details class="mmt-faq-item reveal reveal-delay-4">
-        <summary>
-          <span class="faq-question">Do you have experience in conflict-affected regions?</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-        </summary>
-        <div class="faq-answer">
+
+        <div class="faq-response" id="q4">
+          <span class="resp-label">Question:</span>
+          <h3>Do you have experience in conflict-affected regions?</h3>
           <p>Yes, we have proven capability operating in complex and fragile environments with security coordination, risk mitigation protocols, and established local partner networks.</p>
         </div>
-      </details>
+      </div>
     </div>
   </div>
 </section>
-      <!-- ===== DOWNLOAD CTA SECTION ===== -->
+
+
+<!-- ===== DOWNLOAD CTA SECTION ===== -->
       <section class="section section-download-cta" aria-labelledby="download-heading">
         <div class="container">
           <div class="download-card reveal">

@@ -116,7 +116,7 @@ const NewsPage = {
                     <p class="news-excerpt">${a.excerpt}</p>
                     <button class="news-read-more-btn" data-id="${a.id}">
                       Read Full Article
-                      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      
                     </button>
                   </div>
                 </article>
@@ -147,7 +147,7 @@ const NewsPage = {
                   <p class="news-excerpt">${a.excerpt}</p>
                   <button class="news-read-more-btn" data-id="${a.id}">
                     Read Full Article
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    
                   </button>
                 </div>
               </article>
@@ -189,7 +189,7 @@ const NewsPage = {
                   <div class="news-footer">
                     <button class="news-read-more" data-id="${a.id}">
                       Read Article
-                      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      
                     </button>
                   </div>
                 </div>

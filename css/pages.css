@@ -671,10 +671,6 @@
   margin-bottom: 0.75rem;
 }
 
-.subheading{
-  margin-bottom: 10px;
-}
-
 .capability-desc {
   font-size: 0.9rem;
   color: #64748b;
@@ -11087,14 +11083,14 @@ html {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  padding: 50px 1.5rem;  /* More horizontal space */
-  margin: 0 auto;
 }
+
 /* Hero Section */
 .cap-hero {
   position: relative;
   display: flex;
   align-items: center;
+  padding: 80px 0;
   overflow: hidden;
 
   /* Background: gradient + custom image */

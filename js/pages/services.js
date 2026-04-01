@@ -164,7 +164,7 @@ const ServicesPage = {
               </p>
               
               <div class="service-features">
-                <h3>Key Capabilities</h3>
+                <h3 class="key-heading">Key Capabilities</h3>
                 <div class="features-grid">
                   <div class="feature-item">
                     <div class="feature-icon">
